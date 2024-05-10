@@ -1,0 +1,54 @@
+.video-section{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+    // height: 80vh;
+    height: 760px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url(../../../assets/images/videoBG.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .video-section-content{
+        width: 150px;
+        height: 150px;
+        color: white;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+    }
+    .video-section-title{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+.video-modal{
+    width: 1000px !important;
+    .ant-modal-content{
+        background-color: transparent !important;
+    }
+    .video-iframe{
+        width: 100% !important;
+        height: 500px !important;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100% !important;
+        .video-iframe{
+            width: 100% !important;
+            height: 300px !important;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.hero-section{
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url(../../../assets/images/Hero-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        // width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        color: white;
+        font-weight: 700;
+        font-size: 96px;
+        font-family: "Fiber";
+        line-height: 96px;
+        text-align: center;
+    }
+    p{
+        max-width: 60%;
+        margin: 0 auto;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .explore-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 280px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    @media screen and (max-width: 768px) {
+        h1{
+            font-size: 48px;
+            line-height: 48px;
+            max-width: 90%;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 80%;
+        }
+        .explore-btn{
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        // height: 70vh;
+        // padding-top: 80px;
+        h1{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .explore-btn{
+            width: 150px;
+            height: 30px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

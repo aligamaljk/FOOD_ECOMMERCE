@@ -1,0 +1,65 @@
+.sub-products{
+    margin-top: 80px;
+    .product-carts-container{
+        margin-top: 50px;
+        
+    }
+    .swiper {
+      overflow: visible;
+    }
+    .swiper--option {
+      width: 100%;
+      height: 4vh;
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      .swiper--arrows {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        .arrow {
+          cursor: pointer;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          border: 3px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.4s ease-in-out;
+          font-size: 1.5rem;
+          &:hover {
+            background:#D62828 ;
+            border-color: #D62828;
+          }
+        }
+        .swiper-button-disabled {
+          border-color: rgba(255, 255, 255, 0.4);
+          color: rgba(255, 255, 255, 0.4);
+        }
+      }
+      .swiper--progress {
+        width: 100%;
+        height: 5px;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.4);
+        .swiper-scrollbar-drag {
+        cursor: pointer;
+          background: #D62828;
+          height: 100%;
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      .swiper--option {
+        .swiper--progress {
+          width: 70%;
+        }
+      }
+    }
+}
+
+
+

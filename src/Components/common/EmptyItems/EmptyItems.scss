@@ -1,0 +1,29 @@
+   .empty-items{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    .title-empty{
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: center;
+    }
+    button{
+        width: 250px;
+        letter-spacing: 2px;
+    }
+   }
+   @media screen and (max-width: 665px ) {
+    .empty-items{
+        height: 100%;
+        .title-empty{
+            font-size: 40px !important;
+        }
+        button{
+            width: 200px;
+        }
+    }
+   }

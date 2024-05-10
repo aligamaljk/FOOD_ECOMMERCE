@@ -1,0 +1,47 @@
+.section-header{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ) , url(../../../assets/images/videoBG.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-bottom: 80px;
+    .section-header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .title-two,
+        .title-one{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .title-two{
+            color: #FFFFFF80;
+        }
+        .section-header-line{
+            width: 40px;
+            height: 5px;
+            background: #fff;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    }
+    @media screen and (max-width : 600px) {
+        .title-two,
+        .title-one{
+            font-size: 25px !important;
+            line-height: 30px !important;
+        }
+        .section-header-line{
+            margin-top: 5px !important;
+        }
+    }
+}
