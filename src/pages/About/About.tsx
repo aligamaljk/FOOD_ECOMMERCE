@@ -2,7 +2,7 @@ import { Image } from "antd";
 import Heading from "../../Components/common/Heading/Heading";
 import SectionHeader from "../../Components/common/SectionHeader/SectionHeader";
 import "./About.scss"
-
+import img from "../../assets/images/about.jpg"
 const About = () => {
   return (
     <>
@@ -14,10 +14,8 @@ const About = () => {
             <div className="about-image">
               <Image
                 preview={false}
-                src="/src/assets/images/about.jpg"
+                src={img}
                 alt="about"
-                // width={100}
-                // height={100}
               />
             </div>
             <div className="about-text">
@@ -37,10 +35,8 @@ const About = () => {
             <div className="about-image">
               <Image
                 preview={false}
-                src="/src/assets/images/about.jpg"
+                src={img}
                 alt="about"
-                // width={100}
-                // height={100}
               />
             </div>
             <div className="about-text">
