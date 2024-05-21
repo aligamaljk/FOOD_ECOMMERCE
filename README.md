@@ -15,3 +15,4 @@
 -   react-router-dom
 -   react-icons
 -   vite
+-   million
