@@ -4,9 +4,10 @@ import million from "million/compiler";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [ million.vite({
-      auto: {
-        threshold: 0.05,
-        skip: ["useBadHook", /badVariable/g],
-      },
+      auto:true
+      // auto: {
+      //   threshold: 0.05,
+      //   skip: ["useBadHook", /badVariable/g],
+      // },
     }),react()],
 })
